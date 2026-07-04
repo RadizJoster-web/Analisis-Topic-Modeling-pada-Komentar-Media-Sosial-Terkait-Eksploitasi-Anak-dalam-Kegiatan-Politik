@@ -1,6 +1,6 @@
 # Analisis NLP Komentar Media Sosial Berbahasa Indonesia
 
-Pipeline analisis teks berbahasa Indonesia yang mencakup **preprocessing**, **topic modeling (LDA)**, **text clustering (K-Means & FTC)**, dan **Named Entity Recognition (NER) berbasis aturan (rule-based)**. Studi kasus utama menggunakan dataset komentar media sosial terkait program "Makan Bergizi Gratis (MBG)", dengan pengujian tambahan modul NER pada dataset ulasan aplikasi Gojek.
+Pipeline analisis teks berbahasa Indonesia yang mencakup **preprocessing**, **topic modeling (LDA)**, **text clustering (K-Means & FTC)**, dan **Named Entity Recognition (NER) berbasis aturan (rule-based)**. Studi kasus utama menggunakan dataset komentar media sosial terkait program "Exploitasi anak di bawah umur untuk kepentingan politik", dengan pengujian tambahan modul NER pada dataset ulasan aplikasi Gojek.
 
 ---
 
@@ -63,7 +63,7 @@ Notebook ini menggunakan **dua dataset terpisah**:
 
 | Dataset | Kolom Penting | Digunakan untuk | Path (di notebook) |
 |---|---|---|---|
-| Komentar sosial media (MBG) | `comments` | Preprocessing, LDA, K-Means, FTC, NER | `/content/drive/MyDrive/Machine Learning/UAS/dataset.csv` (829 baris) |
+| Komentar sosial media (Exploitasi anak) | `comments` | Preprocessing, LDA, K-Means, FTC, NER | `/content/drive/MyDrive/Machine Learning/UAS/dataset.csv` (829 baris) |
 | Ulasan aplikasi Gojek | `content` | Uji coba tambahan modul NER | `/content/gojek review.csv` (194.043 baris) |
 
 > ⚠️ Notebook ini awalnya dibuat di **Google Colab** (ada `drive.mount(...)`). Jika ingin dijalankan secara lokal, path di atas **harus disesuaikan** dan baris `drive.mount()` dihapus/dilewati.
@@ -198,9 +198,3 @@ Sebagai catatan objektif dari hasil peninjauan kode (bukan untuk mengurangi nila
 | File | Deskripsi |
 |---|---|
 | `processed_dataset.csv` | Dataset hasil preprocessing (cleaning + tokenisasi + stemming) |
-
----
-
-## Lisensi
-
-Belum ditentukan — tambahkan file `LICENSE` sesuai kebutuhan (mis. MIT) sebelum publikasi publik di GitHub.
